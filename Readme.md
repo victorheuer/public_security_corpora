@@ -1,6 +1,6 @@
 # Public Security Corpora
 
-This is a project dedicated to the construction of a open corpora, a set of texts bodies, in Brazilian Portuguese dedicated to Public Security subjects. 
+This is a project dedicated to the construction of an open corpora, a set of texts bodies in Brazilian Portuguese dedicated to Public Security subjects. 
 
 As an academic research output, in this phase it is intended to be composed by two parts:
 
