@@ -22,23 +22,23 @@ The news corpus scraping was based in two main technologies: Selenium Web Driver
 
 Selenium Web Driver script (_diario_scraping_search_results.py_) scraped the initial results page and got the html code of the target elements. To start this script, is just call in a terminal:
 
-´´´
+```
 python diario_scraping_search_results.py
-´´´
+```
 
 Or open it in a Python IDE and run the script using one Python interpreter (iPython, for example). Check if Selenium Web Driver and if the Google Chrome driver are available in Python environment. If not, is necessary to install it. See [Selenium Web Driver documentation page for Python](https://selenium-python.readthedocs.io/installation.html).
 
 Two spiders were created using the Scrapy framework for scraping the news articles from the links in the previously scraped html code, and the posts on the newspaper blog. To run them, is just use their names as was attributed in the scripts: "news" for the spider dedicated for the news articles and "posts" for the one dedicated to posts articles, using _-o json_file_name.json_ to save the information they scraped in a specific json file.
 
-´´´
+```
 scrapy crawl "news" -o diario_seguranca_news.json
-´´´
+```
 
 and
 
-´´´
+```
 scrapy crawl "posts" -o blog-diario_seguranca_posts.json
-´´´
+```
 
 These calls will start the spider scripts named _spider_diario_news.py_ and _spider_diario-blog-seg_posts.py_.
 
@@ -47,9 +47,9 @@ Remember to check if Scrapy framework is available in Python environment. If not
 After running these two spiders scripts according to the commands passed in the terminal, two json files will be created. They will need some data cleaning, according to the last script to be executed: data_cleaning.py.
 Is just call it in a terminal:
 
-´´´
+```
 python data_cleaning.py
-´´´
+```
 
 Or open it in a Python IDE and execute it with the interpreter. Data cleaning script will create three new json files:
 
@@ -70,7 +70,7 @@ This corpus is composed by tweets retrieved using a spacific geographic location
 In its current structure, the corpus contains the following information: the tweet id, the text, and three kinds of georeferencing information, geo, coordinates and place. Note that not all tweets have this georeferencing information, but these fields have been left because they are considered to be important information for future refinements on this corpus.
 
 
-## Tweets Corpus Scraping
+### Tweets Corpus Scraping
 
 To perform this scraping, Python's Tweepy library was used. Here the scraping script called _twitter_scraper.py_ was obtained from the work by:
 
@@ -78,17 +78,17 @@ Reinoso, G., Farooq, B., & Forum, C. T. R. (2015). Urban Pulse Analysis Using Bi
 
 This script has been changed to include the search elements mentioned above (location and keywords related to public security). To run it, simply have the Tweepy library installed and run the following command at a terminal:
 
-´´´
+```
 python twitter_scraper.py
-´´´
+```
 
 Or open it in a Python IDE and run the script using one Python interpreter. Check the [Tweepy documentation](http://docs.tweepy.org/en/latest/) to understand how to install it in your Python environment.
 
 After executing this script, an initial version of the corpus called _initial_tweets_base.json_ will be obtained, containing all fields of information for each tweet. To extract fields of interest and eliminate duplicates in textual records, the _tweets_initial_cleaning.py_ script must be executed in a terminal:
 
-´´´
+```
 python tweets_initial_cleaning.py
-´´´
+```
 
 Once this is done, the desired corpus version will be obtained.
 
