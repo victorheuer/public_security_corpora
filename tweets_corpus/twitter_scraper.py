@@ -23,8 +23,8 @@ import os
 #Insert Twtter API keys here
 CONSUMER_KEY = 'WmyMPUUdEJWDs6dxzthFEw2Y7'
 CONSUMER_SECRET = 'Z5xoMJYrOLV4SjEzszSOvgqUlQ3QotVMjyZGK0obY5NoSHiJTB'
-ACCESS_TOKEN = '1030505993015382016-FJ4dMpd71KCOsIagprUJI7hh5p1x8L'
-ACCESS_TOKEN_SECRET = 'YNXWSZIb3NteXY3Me14jP1MAry6FL6VBqPvtLsWLxtoiG'
+ACCESS_TOKEN = '1030505993015382016-mybSyE9YPevKRqx7ZHh72XkbhN1XHm'
+ACCESS_TOKEN_SECRET = '6fkxAiS4KiGvaryUoHi0ey99IetKjaXx5mXLeX9vXKhOl'
 
 #Autenticação
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -88,8 +88,8 @@ script_dir = os.path.dirname(__file__)
 rel_path = filename + ".json"
 file_path = os.path.join(script_dir, rel_path) 
  
+#twitterStream = tweepy.streaming.Stream(auth, Listener(path = file_path), tweet_mode= 'extended')
 twitterStream = tweepy.streaming.Stream(auth, Listener(path = file_path))
-
 """
 Using coordinated that covers Recife-PE
 Map-View: https://www.openstreetmap.org (export mode)
@@ -97,7 +97,7 @@ The "locations" parameter within the filter uses [lat. west, long. south, lat.ea
 The "track" parameter within the filter looks for a set of keywords
 """
 
-places = api.geo_search(query="Brazil", granularity="country")
+#places = api.geo_search(query="Brazil", granularity="country")
 
 twitterStream.filter(locations=[-34.9673,-8.0786,-34.8671,-8.0233],
                      languages = ["pt"],
