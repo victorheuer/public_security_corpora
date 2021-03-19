@@ -93,7 +93,7 @@ twitterStream = tweepy.streaming.Stream(auth, Listener(path = file_path))
 """
 Using coordinated that covers Recife-PE
 Map-View: https://www.openstreetmap.org (export mode)
-The "locations" parameter within the filter uses [lat. west, long. south, lat.east, long north]
+The "locations" parameter within the filter uses [long. west, lat. south, long.east, lat. north]
 The "track" parameter within the filter looks for a set of keywords
 """
 
