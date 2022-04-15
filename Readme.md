@@ -9,6 +9,8 @@ As an academic research output, in this phase it is intended to be composed by t
 
 Each script used to generate the corpora and each json file that contains them is inside the folder named referring to the text sources.
 
+> Note that the textual content within both corpora are property of Twitter and Diario de Pernambuco, not ours. The idea of creating these corpora was exclusively dedicated to support us in the development of research dedicated to analyse and understand the evolution of public security subjects or issues on social web, for applications in decision-making process supporting, for instante, on public administration actions.
+
 ## News Corpus
 
 The News Corpus is composed by texts extracted only for the "Diário de Pernambuco" Newspaper website. The content was found using the site search mechanism with the query containing the portuguese terms: _"segurança pública" + crim* + pernambuco_. 
