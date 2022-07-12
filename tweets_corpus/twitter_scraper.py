@@ -20,7 +20,7 @@ from tweepy.streaming import StreamListener
 import time
 import os
 
-#Insert Twtter API keys here
+#Insert Twtter API keys here - Use your credential provided through your access to the Twitter API
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 ACCESS_TOKEN = ''

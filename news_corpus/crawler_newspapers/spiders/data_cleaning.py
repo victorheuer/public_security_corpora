@@ -6,11 +6,11 @@ Created on Fri Jul 31 15:41:16 2020
 """
 import pandas as pd
 
-news_df = pd.read_json(r'C:\Users\Victor\OneDrive\Scrapy Projects\Corpus_Jornais\crawler_jornais\crawler_jornais\spiders\diario_seguranca_news.json',
-                        encoding = 'utf-8')
+news_df = pd.read_json(r'..\Corpus_Jornais\crawler_jornais\crawler_jornais\spiders\diario_seguranca_news.json',
+                        encoding = 'utf-8') #Or put your path here
 
-posts_df = pd.read_json(r'C:\Users\Victor\OneDrive\Scrapy Projects\Corpus_Jornais\crawler_jornais\crawler_jornais\spiders\blog-diario_seguranca_posts.json',
-                        encoding = 'utf-8')
+posts_df = pd.read_json(r'..\Corpus_Jornais\crawler_jornais\crawler_jornais\spiders\blog-diario_seguranca_posts.json',
+                        encoding = 'utf-8') #Or put your path here
 
 #Deleting registers with null valeus by the title field
 news_df.dropna(subset=['title'], inplace=True)
@@ -72,6 +72,6 @@ diario_df = pd.concat([news_df, posts_df])
 diario_df.reset_index(drop=True, inplace=True)
 
 #Saving the dataframes as json files
-news_df.to_json(r'C:\Users\Victor\OneDrive\Scrapy Projects\Corpus_Jornais\crawler_jornais\corpus_json_files\news-diario_corpus.json', orient='records', lines=True)
-posts_df.to_json(r'C:\Users\Victor\OneDrive\Scrapy Projects\Corpus_Jornais\crawler_jornais\corpus_json_files\blog-diario_corpus.json', orient='records', lines=True)
-diario_df.to_json(r'C:\Users\Victor\OneDrive\Scrapy Projects\Corpus_Jornais\crawler_jornais\corpus_json_files\diario_full-corpus.json', orient='records', lines=True)
+news_df.to_json(r'..\Corpus_Jornais\crawler_jornais\corpus_json_files\news-diario_corpus.json', orient='records', lines=True) #Or put your path here
+posts_df.to_json(r'..\Corpus_Jornais\crawler_jornais\corpus_json_files\blog-diario_corpus.json', orient='records', lines=True) #Or put your path here
+diario_df.to_json(r'..\Corpus_Jornais\crawler_jornais\corpus_json_files\diario_full-corpus.json', orient='records', lines=True) #Or put your path here
