@@ -1,15 +1,15 @@
 # Public Security Corpora
 
-This is a project dedicated to the construction of an open corpora, a set of texts bodies in Brazilian Portuguese dedicated to Public Security subjects. 
+This is a project dedicated to the construction of corpora (set of texts) in Brazilian Portuguese dedicated to Public Security subjects. 
 
 As an academic research output, in this phase it is intended to be composed by two parts:
 
 1. News Corpus, containing news texts about Public Security themes extracted from Newspapers websites;
 2. Tweets Corpus, contining tweets;
 
-Each script used to generate the corpora and each json file that contains them is inside the folder named referring to the text sources.
+The scripts used to create each corpora are available within each respective folder.
 
-> Note that the textual content within both corpora are property of Twitter and Diario de Pernambuco, not ours. The idea of creating these corpora was exclusively dedicated to support us in the development of research dedicated to analyse and understand the evolution of public security subjects or issues on social web, for applications in decision-making process supporting, for instante, on public administration actions.
+> Note that the textual content within both corpora are property of Twitter and Diario de Pernambuco, not ours. The idea of creating these corpora was exclusively dedicated to support us in the development of research dedicated to analyse and understand the evolution of public security subjects or issues on social web, for applications in decision-making process supporting, for instante, on public administration actions. **The files are not publicly available because of copyright or Twitter's Developer Agreement, however, for academic research application, we can make them available upon request.**
 
 ## News Corpus
 
