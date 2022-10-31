@@ -67,7 +67,7 @@ The News Corpus, in its current stage, is stored in a json file called _news_ful
 
 ## Tweets Corpus
 
-This corpus is composed by tweets retrieved using a spacific geographic location, the city of Recife, capital of the state of Pernambuco (Brazil), and a set of keywords related to public security.
+This corpus is composed by tweets retrieved using a specific geographic location, the city of Recife, capital of the state of Pernambuco (Brazil), and a set of keywords related to public security.
 
 In its current structure, the corpus contains the following information: the tweet id, the text, and three kinds of georeferencing information, geo, coordinates and place. Note that not all tweets have this georeferencing information, but these fields have been left because they are considered to be important information for future refinements on this corpus.
 
